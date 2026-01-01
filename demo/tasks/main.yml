@@ -9,7 +9,7 @@
     name: madhu
 
 - name: include task
-  ansible.builtin.include_tasks: {{ file }}.yml
+  ansible.builtin.include_tasks: "{{ file }}.yml"
   vars:
     file: greeting
 
