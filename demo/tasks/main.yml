@@ -7,3 +7,12 @@
   ansible.builtin.import_tasks: greeting.yml
   vars:
     name: madhu
+
+- name: include task
+  ansible.builtin.include_tasks: {{ file }}.yml
+  vars:
+    file: greeting
+
+- name: import task2
+  ansible.builtin.import_role:
+    name: demo-0
