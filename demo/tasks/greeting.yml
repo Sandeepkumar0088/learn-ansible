@@ -1,0 +1,7 @@
+- name: task1
+  ansible.builtin.debug:
+    msg: Hello {{ name }}
+
+- name: task2
+  ansible.builtin.debug:
+    msg: How are you {{ name }}

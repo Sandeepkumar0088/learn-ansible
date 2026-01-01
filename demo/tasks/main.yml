@@ -1,0 +1,9 @@
+- name: import task1
+  ansible.builtin.import_tasks: greeting.yml
+  vars:
+    name: sandeep
+
+- name: import task2
+  ansible.builtin.import_tasks: greeting.yml
+  vars:
+    name: madhu
