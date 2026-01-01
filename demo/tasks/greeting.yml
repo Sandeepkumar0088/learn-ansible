@@ -5,3 +5,4 @@
 - name: task2
   ansible.builtin.debug:
     msg: How are you {{ name }}
+
