@@ -14,11 +14,20 @@
     file: greeting
     name: amma
 
-- name: import task2
+- name: import a role statically
   ansible.builtin.import_role:
     name: demo-0
 
-- name: import task2
+- name: import a role statically but another task
   ansible.builtin.import_role:
+    name: demo-0
+    tasks_from: greet
+
+- name: import a role dynamically
+  ansible.builtin.include_role:
+    name: demo-0
+
+- name: import a role statically but another task
+  ansible.builtin.include_role:
     name: demo-0
     tasks_from: greet
