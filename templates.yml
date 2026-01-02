@@ -5,7 +5,7 @@
     student:
       name: sandeep
       age: 24
-    topcs:
+    topics:
       - Linux
       - Shell
       - Ansible
