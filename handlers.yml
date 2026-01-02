@@ -7,4 +7,4 @@
     - name: sample task this is ok
       ansible.builtin.file:
         path: /tmp/test.py
-        state: file
+        state: touch
