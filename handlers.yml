@@ -7,4 +7,4 @@
     - name: sample task this is ok
       ansible.builtin.copy:
         content: "executing handlers"
-        path: /tmp/test.py
+        dest: /tmp/test.py
