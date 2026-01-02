@@ -5,7 +5,7 @@
     name: sandeep
   tasks:
     - name: copy file
-      ansible.builtin.file:
+      ansible.builtin.copy:
         src: text.txt
         dest: /tmp/copied.text
     - name: copy file with template
