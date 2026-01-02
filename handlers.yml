@@ -7,3 +7,4 @@
     - name: sample task this is ok
       ansible.builtin.file:
         path: /tmp/test.txt
+        state: present
