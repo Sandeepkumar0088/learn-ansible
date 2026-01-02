@@ -9,7 +9,7 @@
     - name: copy file
       ansible.builtin.copy:
         src: text.txt
-        dest: /tmp/copied.text
+        dest: /tmp/copied.txt
     - name: copy file with template
       ansible.builtin.template:
         src: text.txt
