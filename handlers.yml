@@ -4,7 +4,16 @@
   tasks:
     - name: sample task that can be changed
       ansible.builtin.shell: uptime
+      notify: s1
     - name: sample task this is ok
       ansible.builtin.copy:
         content: "executing handlers"
         dest: /tmp/test.py
+      notify: s2
+  handlers:
+    - name: s1
+      ansible.builtin.debug:
+        msg: s1
+    - name: s2
+      ansible.builtin.debug:
+        msg: s2
