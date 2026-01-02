@@ -5,6 +5,6 @@
     - name: sample task that can be changed
       ansible.builtin.shell: uptime
     - name: sample task this is ok
-      ansible.builtin.file:
+      ansible.builtin.copy:
+        content: "executing handlers"
         path: /tmp/test.py
-        state: touch
