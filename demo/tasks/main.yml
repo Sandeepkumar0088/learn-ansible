@@ -12,6 +12,7 @@
   ansible.builtin.include_tasks: "{{ file }}.yml"
   vars:
     file: greeting
+    name: amma
 
 - name: import task2
   ansible.builtin.import_role:
