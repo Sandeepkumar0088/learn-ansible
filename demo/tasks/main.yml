@@ -27,7 +27,7 @@
   ansible.builtin.include_role:
     name: demo-0
 
-- name: import a role statically but another task
+- name: import a role dynamically but another task
   ansible.builtin.include_role:
     name: demo-0
     tasks_from: greet
