@@ -8,7 +8,7 @@
   vars:
     name: madhu
 
-- name: include task
+- name: include task greet
   ansible.builtin.include_tasks: "{{ file }}.yml"
   vars:
     file: greeting
