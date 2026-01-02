@@ -1,8 +1,11 @@
 hello {{ student.name }},
-    How are you {{ student.name }}
-    Your registered age is {{ student.age }}
-    {% if student.age > 18 %}
-        You are adult
-    {% else %}
-        You are minor
-    {% endif %}
+How are you {{ student.name }}
+{% if student.age > 18 %}
+    You are adult
+{% else %}
+    You are minor
+{% endif %}
+Your registered age is {{ student.age }}
+{% for topic in topics %}
+    Training Tool - {{ topic }}
+{% endfor %}

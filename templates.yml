@@ -5,6 +5,11 @@
     student:
       name: sandeep
       age: 24
+    topcs:
+      - Linux
+      - Shell
+      - Ansible
+      - Terrafrom
   tasks:
     - name: copy file
       ansible.builtin.copy:
