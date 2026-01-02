@@ -1,0 +1,3 @@
+- name: say gud morning
+  ansible.builtin.debug:
+    msg: Good Morning........

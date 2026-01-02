@@ -17,3 +17,8 @@
 - name: import task2
   ansible.builtin.import_role:
     name: demo-0
+
+- name: import task2
+  ansible.builtin.import_role:
+    name: demo-0
+    tasks_from: greet
