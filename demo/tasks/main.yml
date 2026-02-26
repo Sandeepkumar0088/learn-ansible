@@ -1,14 +1,14 @@
-- name: import task1
+- name: import task1 static
   ansible.builtin.import_tasks: greeting.yml
   vars:
     name: sandeep
 
-- name: import task2
+- name: import task2 static
   ansible.builtin.import_tasks: greeting.yml
   vars:
     name: madhu
 
-- name: include task greet
+- name: include task greet dynamically
   ansible.builtin.include_tasks: "{{ file }}.yml"
   vars:
     file: greeting

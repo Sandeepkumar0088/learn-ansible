@@ -2,6 +2,7 @@
 - name: Print variable x and y from inventory
   hosts: localhost
   connection: local
+  become: true
   tasks:
     - name: Print variable x and y from inventory
       ansible.builtin.debug:
