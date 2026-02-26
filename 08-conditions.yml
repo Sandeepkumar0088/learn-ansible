@@ -9,7 +9,7 @@
     - name: Conditions
       ansible.builtin.debug:
         msg: Hello
-      when: x > 200
+      when: x > 99
 
     - name: Print Boolean1
       ansible.builtin.debug:
