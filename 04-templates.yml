@@ -19,3 +19,7 @@
       ansible.builtin.template:
         src: text.txt
         dest: /tmp/temp-copied.txt
+    - name: show text file
+      ansible.builtin.shell: cat /tmp/text.txt
+    - name: show template file
+      ansible.builtin.shell: cat /tmp/temp-copied.txt
