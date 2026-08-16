@@ -1,6 +1,7 @@
 ## Variables from Inventory file - Filename of inventory - hosts.ini
 - name: Print variable x and y
-  hosts: 172.31.26.229
+  hosts: localhost
+  connection: local
 #  become: true
 #  vars:
 #    x: 10
