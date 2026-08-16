@@ -1,6 +1,6 @@
 ## Variables from Inventory file - Filename of inventory - hosts.ini
 - name: Print variable x and y
-  hosts: demo
+  hosts: 172.31.26.229
 #  become: true
 #  vars:
 #    x: 10
