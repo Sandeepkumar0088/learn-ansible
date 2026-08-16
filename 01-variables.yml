@@ -10,3 +10,4 @@
     - name: Print variable x and y
       ansible.builtin.debug:
         msg: x - {{ x }} y - {{ y }}
+
