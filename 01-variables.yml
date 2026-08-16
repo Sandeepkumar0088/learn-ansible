@@ -1,5 +1,5 @@
 ## Variables from Inventory file - Filename of inventory - hosts.ini
-- name: Print variable x and y from inventory
+- name: Print variable x and y
   hosts: localhost
   connection: local
   become: true
@@ -7,6 +7,6 @@
     x: 10
     y: 20
   tasks:
-    - name: Print variable x and y from inventory
+    - name: Print variable x and y
       ansible.builtin.debug:
         msg: x - {{ x }} y - {{ y }}
